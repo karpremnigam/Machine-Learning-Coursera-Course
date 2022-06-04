@@ -34,8 +34,8 @@ for images, labels in tqdm(trainloader):
     cross_entropy.backward()
     optimizer.step()
 
-    correct = 0
-    total = len(mnist_test)
+correct = 0
+total = len(mnist_test)
 
 with torch.no_grad():
 
