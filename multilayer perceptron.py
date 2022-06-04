@@ -1,6 +1,3 @@
-import torch
-### YOUR CODE HERE
-
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -12,7 +9,6 @@ mnist_test = datasets.MNIST(root = "./datasets", train = False, transform= trans
 trainloader = torch.utils.data.DataLoader(mnist_train, batch_size = 100, shuffle = True)
 testloader = torch.utils.data.DataLoader(mnist_test, batch_size = 100, shuffle = True)
 
-# Make sure to print out your accuracy on the test set at the end.
 
 W = torch.randn(784, 500)/np.sqrt(784)
 W.requires_grad_()
